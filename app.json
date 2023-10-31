@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "kayahome_frontend_mobile",
+    "slug": "kayahome_frontend_mobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "kayahome_frontend_mobile"
+}
