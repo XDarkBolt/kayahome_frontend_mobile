@@ -45,15 +45,7 @@ function MyTabs() {
       },
     }}>
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen screenOptions={{
-      tabBarStyle: {
-        position: 'absolute',
-        top: 20,
-        elevation: 0,
-        backgroundColor: '#FFFFFF',
-        borderRadius: 35
-      },
-    }} name="My" component={MyScreen} />
+      <Tab.Screen name="My" component={MyScreen} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
   );
