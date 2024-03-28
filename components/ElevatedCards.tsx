@@ -2,31 +2,13 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 export default function ElevatedCards() {
+    const CompArray = ['First Name', 'Last Name', 'Phone', 'Email', 'Etc']
+    const cardElevetadComponents = CompArray.map(type => <View style={[styles.card, styles.cardElevetad]}><Text>{type}</Text></View>)
     return (
         <View>
             <Text style={styles.headingText}>ElevatedCards</Text>
             <ScrollView horizontal={true} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={styles.container}>
-                <View style={[styles.card, styles.cardElevetad]}>
-                    <Text>Tap</Text>
-                </View>
-                <View style={[styles.card, styles.cardElevetad]}>
-                    <Text>Tap</Text>
-                </View>
-                <View style={[styles.card, styles.cardElevetad]}>
-                    <Text>Tap</Text>
-                </View>
-                <View style={[styles.card, styles.cardElevetad]}>
-                    <Text>Tap</Text>
-                </View>
-                <View style={[styles.card, styles.cardElevetad]}>
-                    <Text>Tap</Text>
-                </View>
-                <View style={[styles.card, styles.cardElevetad]}>
-                    <Text>Tap</Text>
-                </View>
-                <View style={[styles.card, styles.cardElevetad]}>
-                    <Text>Tap</Text>
-                </View>
+            <>{cardElevetadComponents}</>
             </ScrollView>
         </View>
     )

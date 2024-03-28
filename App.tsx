@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import FlatCards from './components/FlatCards';
 import ElevatedCards from './components/ElevatedCards';
+import SearchBar from './components/SearchBar';
 
 function HomeScreen() {
   const [title, setTitle] = useState("Initial text");
@@ -51,7 +52,7 @@ function MyScreen() {
   }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{height: '100%'}}>
       <ScrollView>
         <FlatCards />
         <ElevatedCards />
@@ -91,7 +92,9 @@ function MyTabs() {
 
 export default function App() {
   return (
+    
     <NavigationContainer>
+      <SearchBar/>
       <MyTabs />
     </NavigationContainer>
   );
