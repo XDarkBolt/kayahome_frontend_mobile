@@ -7,9 +7,9 @@ const SettingsScreen = () => {
     CompArray[1] = 'LIST2';
 
     return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#FFF' }}>
-            <Neumorph size={50}>
-                <Text style={{ width: 100, height: 100, backgroundColor: '#CCC'}}>{CompArray}</Text>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgb(28, 28, 30)' }}>
+            <Neumorph size={100}>
+                <Text style={{color: 'white'}}>{CompArray}</Text>
             </Neumorph>
         </View>
     );

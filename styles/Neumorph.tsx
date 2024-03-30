@@ -21,31 +21,31 @@ export const Neumorph = ({ children, size, style }: NeumorphProps) => {
 
 const styles = StyleSheet.create({
     neuTop: {
-        shadowColor: '#000000',
+        position: 'absolute',
+        shadowColor: 'rgb(242, 242, 247)',
         shadowOffset: {
-            width: -5,
-            height: -5,
+            width: -2.5,
+            height: -2.5,
         },
-        shadowOpacity: 1,
-        shadowRadius: 5,
-        elevation: 1,
+        shadowOpacity: 0.05,
+        shadowRadius: 2.5,
+        elevation: 3,
     },
     neuBottom: {
-        shadowColor: '#000000',
+        shadowColor: 'rgb(10, 10, 12)',
         shadowOffset: {
-            width: 5,
-            height: 5,
+            width: 2.5,
+            height: 2.5,
         },
-        shadowOpacity: 1,
-        shadowRadius: 5,
-        elevation: 1,
+        shadowOpacity: 0.5,
+        shadowRadius: 2.5,
+        elevation: 3,
     },
     inner: {
-        backgroundColor: '#e0e5ec',
+        backgroundColor: 'rgb(28, 28, 30)',
         alignItems: 'center',
         justifyContent: 'center',
-        borderColor: '#45aa26',
-        borderWidth: 10,
+        borderRadius: 10
     },
 });
 
