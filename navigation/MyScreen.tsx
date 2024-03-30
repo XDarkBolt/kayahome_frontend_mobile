@@ -1,14 +1,14 @@
-import { SafeAreaView, ScrollView } from "react-native";
+import { SafeAreaView, ScrollView, Text } from "react-native";
 import FlatCards from "../components/FlatCards";
-import ElevatedCards from "../components/ElevatedCards";
+import HorizontalCards from "../components/HorizontalCards";
 
 const MyScreen = () => {
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{ height: '100%', backgroundColor: 'rgb(28, 28, 30)' }}>
             <ScrollView>
                 <FlatCards />
-                <ElevatedCards />
+                <HorizontalCards />
             </ScrollView>
         </SafeAreaView>
     );

@@ -20,14 +20,14 @@ function MyTabs() {
         bottom: 20,
         left: 20,
         right: 20,
-        backgroundColor: 'rgb(28, 28, 30)',
+        backgroundColor: 'rgb(58, 58, 60)',
         borderRadius: 1000,
         shadowColor: '#000',
         shadowOffset: { width: -2, height: 4 },
         shadowOpacity: 0.4,
         shadowRadius: 3,
         elevation: 6,
-        borderBlockColor: 'rgb(28, 28, 30)',
+        borderBlockColor: 'rgb(58, 58, 60)',
       },
     }}>
       <Tab.Screen name="Home" component={HomeScreen} />
@@ -49,7 +49,7 @@ function MyTabs() {
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={MyTheme}>
       <SearchBar />
       <MyTabs />
     </NavigationContainer>
@@ -64,3 +64,15 @@ const cards = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+const MyTheme = {
+  dark: true,
+  colors: {
+    primary: 'rgb(255, 45, 85)',
+    background: 'rgb(58, 58, 60)',
+    card: 'rgb(255, 255, 255)',
+    text: 'rgb(28, 28, 30)',
+    border: 'rgb(199, 199, 204)',
+    notification: 'rgb(255, 69, 58)',
+  },
+};

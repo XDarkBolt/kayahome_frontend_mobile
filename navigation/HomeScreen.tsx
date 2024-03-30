@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, Button, Pressable, GestureResponderEvent } from 'react-native';
 import { useIsFocused } from '@react-navigation/native';
 import { getMoviesFromApi } from '../services/apiservice';
-import { styles } from '../scss/styles';
+import { styles } from '../styles/styles';
 
 const HomeScreen = () => {
     const [title, setTitle] = useState("Button First State");
@@ -23,7 +23,7 @@ const HomeScreen = () => {
         }
     }, [isFocused]); // Empty dependency array ensures it runs only once on mount
 
-    async function onPress(event: GestureResponderEvent) {
+    async function onPress() {
         try {
             const jsonMovies: Movie[] = await getMoviesFromApi();
             jsonMovies.map(type => console.log(type));
