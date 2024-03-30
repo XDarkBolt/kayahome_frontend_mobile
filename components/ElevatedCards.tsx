@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ElevatedCards() {
     const CompArray = ['First Name', 'Last Name', 'Phone', 'Email', 'Etc']
-    const cardElevetadComponents = CompArray.map(type => <View style={[styles.card, styles.cardElevetad]}><Text>{type}</Text></View>)
+    const cardElevetadComponents = CompArray.map((type, index) => <View key={index} style={[styles.card, styles.cardElevetad]}><Text>{type}</Text></View>)
     return (
         <View>
             <Text style={styles.headingText}>ElevatedCards</Text>
